@@ -1,0 +1,17 @@
+<!--pages/custom/custom.wxml-->
+<view class="container" style="padding-top:{{statusBarHeight+titleBarHeight}}px">
+  <view class="header">
+    <view class="status-bar" style="height:{{statusBarHeight}}px"></view>
+    <view class="title-bar" style="height:{{titleBarHeight}}px">
+      <view class='return' bindtap="back"><image class='back' src='../../images/back.png'></image></view>
+      <view class='title'>自定义空页</view>
+      <view class="tablet"></view>
+    </view>
+  </view>
+  <view class='body'>
+    <view class='main'>
+      
+    </view>
+  </view>
+</view>
+

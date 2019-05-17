@@ -1,0 +1,26 @@
+<!--pages/scrollView/scrollView.wxml-->
+<view class="container" style="padding-top:{{statusBarHeight+titleBarHeight}}px">
+  <view class="header">
+    <view class="status-bar" style="height:{{statusBarHeight}}px"></view>
+    <view class="title-bar" style="height:{{titleBarHeight}}px">
+      <view class='return' bindtap="back"><image class='back' src='../../images/back.png'></image></view>
+      <view class='title'>scroll-view</view>
+      <view class="tablet"></view>
+    </view>
+  </view>
+  <view class='body'>
+    <view class='main'>
+      <scroll-view class='nav' scroll-x="true">
+        <view class='wrap'>
+            <view class='n-item' data-index="0" bindtap='tab'>全部</view>
+            <view class='n-item' data-index="2" bindtap='tab'>待付款</view>
+            <view class='n-item' data-index="4" bindtap='tab'>待发货</view>
+            <view class='n-item' data-index="5" bindtap='tab'>待收货</view>
+            <view class='n-item' data-index="8" bindtap='tab'>退换货</view>
+            <view class='n-item' data-index="9" bindtap='tab'>退换货</view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>
+

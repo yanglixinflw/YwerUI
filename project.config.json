@@ -1,0 +1,71 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.2",
+	"appid": "wx3f087bfe84091364",
+	"projectname": "%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BB%A3%E7%A0%81%E6%95%B4%E7%90%86",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "share",
+					"pathName": "pages/share/share",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "toast",
+					"pathName": "pages/toast/toast",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "swiper",
+					"pathName": "pages/swiper/swiper",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "自定义空页",
+					"pathName": "pages/custom/custom",
+					"scene": null
+				}
+			]
+		}
+	}
+}

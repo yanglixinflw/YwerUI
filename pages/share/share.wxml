@@ -1,0 +1,17 @@
+<!--pages/share/share.wxml-->
+<view class="container" style="padding-top:{{statusBarHeight+titleBarHeight}}px">
+  <view class="header">
+    <view class="status-bar" style="height:{{statusBarHeight}}px"></view>
+    <view class="title-bar" style="height:{{titleBarHeight}}px">
+      <view class='return' bindtap="back"><image class='back' src='../../images/back.png'></image></view>
+      <view class='title'>转发</view>
+      <view class="tablet"></view>
+    </view>
+  </view>
+  <view class='body'>
+    <view class='main'>
+      <!-- 加plain=”true”后button的边框样式可自定义  -->
+      <button data-name="shareBtn" open-type="share" plain="true">转发</button>
+    </view>
+  </view>
+</view>

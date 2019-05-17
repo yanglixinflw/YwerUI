@@ -1,0 +1,66 @@
+/**index.wxss**/
+page{
+  background:#f2f2f2;
+}
+.container {
+  box-sizing: border-box;
+  height: 100%;
+  /* background: rgba(0, 255, 0, 0.1); */
+}
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background: #ffffff;
+}
+.status-bar {
+  background: #ffffff;
+}
+.title-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title{
+  font-size: 30rpx;
+}
+.body{
+  width: 100%;
+  height: auto;  
+}
+.main{
+  width: 92%;
+  height: 100%;
+  margin:auto;
+}
+
+/* 此处向上是头部 */
+.section{
+  padding:25rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.s-item{
+  background:#ff5400;
+  padding:10rpx 25rpx;
+  display: flex;
+  justify-content: center;
+  border-radius: 10rpx;
+  font-size: 24rpx;
+  margin-right:25rpx;
+  margin-bottom: 25rpx;
+  box-shadow:0px 2px 5px 1px rgba(207, 195, 196, 0.5);
+  color: #ffffff;
+}
+.page{
+  display: flex;
+  justify-content: center;
+}
+.p-item{
+  font-size:28rpx;
+  padding:10rpx 25rpx;
+  background: #fff;
+  margin-right: 20rpx;
+  border-radius: 10rpx;
+}

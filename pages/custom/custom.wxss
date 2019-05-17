@@ -1,0 +1,54 @@
+/* pages/custom/custom.wxss */
+page {
+  height: auto;  
+  background: #fefefe
+}
+.container {
+  box-sizing: border-box;
+  height: 100%;
+}
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background: #ffffff;
+}
+.status-bar {
+  background: #ffffff;
+}
+.title-bar {
+  width: 92%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.return{
+  width: 80rpx;
+  height: 80rpx;
+  overflow: hidden
+}
+.back{
+  width: 19rpx;
+  height: 32rpx;
+  display: block;
+  margin:30rpx 0 0 6rpx;
+}
+.title{
+  min-width: 132rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+.tablet{
+  width: 80rpx;
+}
+.body{
+  width: 100%;
+  height: auto;  
+}
+.main{
+  width: 92%;
+  height: 100%;
+  margin:auto;
+}

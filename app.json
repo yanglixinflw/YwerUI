@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/custom/custom",
+    "pages/swiper/swiper",
+    "pages/onlineHot/onlineHot",
+    "pages/share/share",
+    "pages/login/login",
+    "pages/toast/toast",
+    "pages/unload/unload",
+    "pages/upload/upload",
+    "pages/getData/getData",
+    "pages/pathParam/pathParam",
+    "pages/scrollView/scrollView"
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,75 @@
+<!--pages/swiper/swiper.wxml-->
+<view class="container" style="padding-top:{{statusBarHeight+titleBarHeight}}px">
+  <view class="header">
+    <view class="status-bar" style="height:{{statusBarHeight}}px"></view>
+    <view class="title-bar" style="height:{{titleBarHeight}}px">
+      <view class='return' bindtap="back"><image class='back' src='../../images/back.png'></image></view>
+      <view class='title'>轮播</view>
+      <view class="tablet"></view>
+    </view>
+  </view>
+  <view class='body'>
+    <view class='main'>
+      
+      <!-- 普通的轮播 -->
+      <view>普通的轮播</view>
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{duration}}" current="{{swiperCurrent}}"  class="swiper">
+        <block wx:for="{{imgUrls}}" wx:key="unique">
+          <swiper-item>
+            <image src="{{item}}" class="img" bindtap="swipclick" />
+          </swiper-item>
+        </block>
+      </swiper>
+
+
+      <!-- 视频轮播 -->
+      <!-- <view>视频轮播</view>
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{duration}}" current="{{swiperCurrent}}" bindchange="swiperChange" class="swiper">
+        <block wx:for="{{imgUrls}}" wx:key="unique">
+          <swiper-item>
+            <video src="{{item}}" class="video" bindtap="swipclick"></video>
+          </swiper-item>
+        </block>
+      </swiper> -->
+      <!--  -->
+
+
+      <view>轮播的点修改</view>
+      <!-- 轮播 -->
+      <swiper class='swiper swiper1' indicator-dots='true' indicator-color="#d6d6d6" indicator-active-color="#77c111" autoplay="true" circular="true">
+        <block wx:for="{{imgUrls}}" wx:key="unique">
+          <swiper-item>
+            <image src="{{item}}" class="img" bindtap="swipclick" />
+          </swiper-item>
+        </block>
+      </swiper>
+
+
+      <view>可点击的上下轮播</view>
+      <!-- 可点击的上下轮播 -->
+      <view class='lunbo'>
+        <image class='bigPic' src='{{worksSrc}}'></image>
+        <view class='prev' bindtap='prev'>
+          <image src='../../images/greyjiantou.png'></image>
+        </view>
+        <view class='next' bindtap='next'>
+          <image src='../../images/greyjiantou.png'></image>
+        </view>
+        <swiper class='swiper2' bindchange="intervalChange" autoplay="true" circular="true" current="{{swiper.current}}" display-multiple-items="6">
+          <swiper-item class='swiper-item' wx:for="{{swiper.works}}" wx:key="id" wx:for-index="index"  wx:for-item="item">
+            <view class='img_box' bindtap='clickPic' id="{{index}}">
+              <image src='{{item.src}}'></image>  
+            </view> 
+          </swiper-item>
+        </swiper>
+      </view>
+
+
+    </view>
+  </view>
+</view>
+
+
+  
+
+

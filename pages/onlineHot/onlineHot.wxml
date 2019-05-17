@@ -1,0 +1,19 @@
+<!--pages/onlineHot/onlineHot.wxml-->
+<view class="container" style="padding-top:{{statusBarHeight+titleBarHeight}}px">
+  <view class="header">
+    <view class="status-bar" style="height:{{statusBarHeight}}px"></view>
+    <view class="title-bar" style="height:{{titleBarHeight}}px">
+      <view class='return' bindtap="back"><image class='back' src='../../images/back.png'></image></view>
+      <view class='title'>客服按钮</view>
+      <view class="tablet"></view>
+    </view>
+  </view>
+  <view class='body'>
+    <view class='main'>
+      <button class="kf_button" open-type="contact" session-from="weapp">
+          客服按钮
+      </button>
+    </view>
+  </view>
+</view>
+

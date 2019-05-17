@@ -1,0 +1,157 @@
+/* pages/swiper/swiper.wxss */
+page {
+  height: auto;  
+  background: #fefefe;
+  padding-bottom: 30rpx;
+  box-sizing: border-box
+}
+.container {
+  box-sizing: border-box;
+  height: 100%;
+}
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background: #ffffff;
+}
+.status-bar {
+  background: #ffffff;
+}
+.title-bar {
+  width: 92%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.return{
+  width: 80rpx;
+  height: 80rpx;
+  overflow: hidden
+}
+.back{
+  width: 19rpx;
+  height: 32rpx;
+  display: block;
+  margin:30rpx 0 0 6rpx;
+}
+.title{
+  min-width: 132rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+.tablet{
+  width: 80rpx;
+}
+.body{
+  width: 100%;
+  height: auto;  
+}
+.main{
+  width: 92%;
+  height: 100%;
+  margin:auto;
+}
+swiper-item image {
+    width: 100%;
+    height: 100%;
+}
+.swiper-container{
+  width: 100%;
+  position: relative;
+}
+.swiper-container .swiper{
+  height: 300rpx;
+}
+.swiper-container .swiper .img{
+  width: 100%;
+  height: 100%;
+}
+swiper-item video {
+    width: 100%;
+    height: 100%;
+}
+.swiper-container .swiper .video{
+  width: 100%;
+  height: 100%;
+}
+/* 轮播点修改*/
+/* 
+修改轮播的点
+ */
+.swiper1 .wx-swiper-dots.wx-swiper-dots-horizontal{
+     margin-bottom: 2rpx;
+}
+.swiper1 .wx-swiper-dot{
+    width:40rpx;
+    display: inline-flex;
+    height: 10rpx; 
+    margin-left: 20rpx;
+    justify-content:space-between;
+}
+.swiper1 .wx-swiper-dot::before{
+    content: '';
+    flex-grow: 1;  
+    background: #d6d6d6;
+    border-radius: 8rpx
+}
+.swiper1 .wx-swiper-dot-active::before{
+    background:#77c111;    
+}
+/* 可点击的上下轮播 */
+.lunbo{
+  width: 100%;
+  height: 623rpx;
+  position: relative
+}
+.bigPic{
+  width: 100%;
+  height: 517rpx;
+}
+.swiper2{
+  width: 100%;
+  height: 79rpx;
+  margin-top: 22rpx;
+}
+.swiper-item{
+  width:105rpx;
+  height: 79rpx;
+}
+.img_box{
+ width:105rpx;
+  height: 79rpx;
+}
+.img_box image{
+ width:105rpx;
+  height: 79rpx;
+} 
+.prev,.next{
+  width: 49rpx;
+  height: 49rpx;
+  background: rgba(0,0,0,.4)
+}
+.prev{
+  position: absolute;
+  top:234rpx;
+  left: 2rpx;
+}
+.next{
+  position: absolute;
+  top:234rpx;
+  right: 0;
+}
+.prev image{
+  width: 16rpx;
+  height: 29rpx;
+  display: block;
+  transform: rotate(180deg);
+  margin: 10rpx auto;
+}
+.next image{
+  width: 16rpx;
+  height: 29rpx;
+  display: block;
+  margin: 10rpx auto;
+}
