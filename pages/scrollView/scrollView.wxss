@@ -1,5 +1,5 @@
 /* pages/scrollView/scrollView.wxss */
-page {
+/* page {
   height: auto;  
   background: #fefefe
 }
@@ -51,7 +51,7 @@ page {
   width: 92%;
   height: 100%;
   margin:auto;
-}
+} */
 .nav{
   color:#888;
   font-size:28rpx;
@@ -76,6 +76,18 @@ page {
   text-align: center;
   padding: 0 30rpx;
 }
-.nav .active{
-  border-bottom:2px solid #f1aea5;
+.item_on{
+ color: #00bba1;
+ border-bottom:2px solid #f1aea5;
+}
+.swiper-box{
+ height: 100px;
+ width: 100%;
+}
+.swiper-item{
+ text-align: center;
+}
+.slide-view{
+  height: 100rpx;
+  line-height: 100rpx;
 }
