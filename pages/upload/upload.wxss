@@ -1,1 +1,115 @@
 /* pages/upload/upload.wxss */
+page {
+  height: auto;  
+  background: #fefefe
+}
+.container {
+  box-sizing: border-box;
+  height: 100%;
+}
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background: #ffffff;
+}
+.status-bar {
+  background: #ffffff;
+}
+.title-bar {
+  width: 92%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.return{
+  width: 80rpx;
+  height: 80rpx;
+  overflow: hidden
+}
+.back{
+  width: 19rpx;
+  height: 32rpx;
+  display: block;
+  margin:30rpx 0 0 6rpx;
+}
+.title{
+  min-width: 132rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+.tablet{
+  width: 80rpx;
+}
+.body{
+  width: 100%;
+  height: auto;  
+}
+.main{
+  width: 92%;
+  height: 100%;
+  margin:auto;
+}
+.upload{
+  width: 100%;
+  height: auto;
+}
+.upTop{
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+}
+.upBtn{
+  width: 150rpx;
+  height: 60rpx;
+  background: #77c111;
+  color: #ffffff;
+  font-size: 24rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 8rpx;
+  margin-left: 18rpx;
+}
+.lh{
+  font-size: 24rpx;
+  line-height: 50rpx;
+}
+.rest{
+  font-size: 20rpx;
+  color: #666666;
+  line-height: 60rpx;
+  margin-left: 20rpx;
+}
+.rest text{
+  color: #de4f53
+}
+.item{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.picBox{
+  width: 330rpx;
+  height: 205rpx;
+  margin-top: 30rpx;
+  border-radius: 8rpx;
+  position: relative
+}
+.pics{
+  width: 330rpx;
+  height: 205rpx;
+  display: block;
+  border-radius: 8rpx;
+}
+.delete{
+  width: 34rpx;
+  height: 34rpx;
+  display: block;
+  position: absolute;
+  top:13rpx;
+  right: 9rpx;
+}

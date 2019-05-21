@@ -40,8 +40,9 @@ Page({
       },
       {
         id: 7,
-        name: "九宫格方式上传图片（预览并删除",
+        name: "九宫格方式上传图片（预览并删除)",
         pathUrl: "/pages/upload/upload",
+        like: true,
       },
       {
         id: 8,
@@ -112,6 +113,12 @@ Page({
         id: 1,
         name: "小程序scroll-x写nav",
         pathUrl: "/pages/scrollView/scrollView",
+        like: true
+      },
+      {
+        id: 2,
+        name: "左滑删除",
+        pathUrl: "/pages/del/del",
         like: true
       },
     ],

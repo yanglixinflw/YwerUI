@@ -1,1 +1,34 @@
 <!--pages/upload/upload.wxml-->
+<view class="container" style="padding-top:{{statusBarHeight+titleBarHeight}}px">
+  <view class="header">
+    <view class="status-bar" style="height:{{statusBarHeight}}px"></view>
+    <view class="title-bar" style="height:{{titleBarHeight}}px">
+      <view class='return' bindtap="back"><image class='back' src='../../images/back.png'></image></view>
+      <view class='title'>九宫格上传图</view>
+      <view class="tablet"></view>
+    </view>
+  </view>
+  <view class='body'>
+    <view class='main'>
+
+
+      <view class='upload'>
+          <view class='upTop'>
+            <label class='lh'>上传图片<text style='vertical-align:super'>*</text></label>
+            <view class='upBtn' bindtap='upLoad'>选择图片</view>
+            <view class='rest'>还可以上传<text>{{rest}}</text>张图片，单张图片2M以内</view>
+          </view>
+          <view class="item">
+            <block wx:for="{{images}}" wx:key="id"> 
+              <view class='picBox'>
+                <image class='pics' src="{{item}}" data-src="{{item}}" mode="aspectFill" />
+                <image src="../../images/dels.png" class="delete" bindtap="delete" data-index="{{index}}"/>
+              </view>
+            </block>
+          </view> 
+        </view>
+
+
+    </view>
+  </view>
+</view>

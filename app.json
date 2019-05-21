@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/del/del", 
     "pages/custom/custom",
     "pages/swiper/swiper",
     "pages/onlineHot/onlineHot",

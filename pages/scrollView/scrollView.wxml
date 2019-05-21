@@ -1,47 +1,25 @@
 <!--pages/scrollView/scrollView.wxml-->
-<wxs module="filter">
-    var getHeight = function (tabBoxHeight, length){
-        var height = 100
-        if (length > 0){
-            height = tabBoxHeight * length
-        }
-        return height
-    }
-    module.exports = {
-        getHeight: getHeight
-    }
-</wxs>
-
-  <scroll-view class='nav' scroll-x="true">
-    <view class='wrap'>
-      <block wx:for="{{tabs}}" wx:for-index="index" wx:for-item="item">
-        <view  class="{{activeIndex == index ?'item_on':''}} n-item" id="{{index}}" bindtap='tab'>{{item}}</view>
-      </block>
+<view class="container" style="padding-top:{{statusBarHeight+titleBarHeight}}px">
+  <view class="header">
+    <view class="status-bar" style="height:{{statusBarHeight}}px"></view>
+    <view class="title-bar" style="height:{{titleBarHeight}}px">
+      <view class='return' bindtap="back"><image class='back' src='../../images/back.png'></image></view>
+      <view class='title'>scroll-view</view>
+      <view class="tablet"></view>
     </view>
-  </scroll-view>
-  <swiper current="{{activeIndex}}" style="height:{{filter.getHeight(tabBoxHeight, data.length)}}rpx" class="swiper-box" duration="100" bindchange="bindChange">
-    <swiper-item class="swiper-item">
-      <block wx:for="{{data}}" wx:for-index="index" wx:for-item="item">
-        <view class="slide-view">123</view>
-      </block>
-    </swiper-item>
-      <swiper-item class="swiper-item">
-      <view class="slide-view">tab1</view>
-    </swiper-item>
-      <swiper-item class="swiper-item">
-      <view class="slide-view">tab2</view>
-    </swiper-item>
-      <swiper-item class="swiper-item">
-      <view class="slide-view">tab3</view>
-    </swiper-item>
-    <swiper-item class="swiper-item">
-      <view class="slide-view">tab4</view>
-    </swiper-item>
-      <swiper-item class="swiper-item">
-      <view class="slide-view">tab5</view>
-    </swiper-item>
-      <swiper-item class="swiper-item">
-      <view class="slide-view">tab6</view>
-    </swiper-item>
-  </swiper>
-
+  </view>
+  <view class='body'>
+    <view class='main'>
+      <scroll-view class='nav' scroll-x="true">
+        <view class='wrap'>
+            <view class='n-item' data-index="0" bindtap='tab'>全部</view>
+            <view class='n-item' data-index="2" bindtap='tab'>待付款</view>
+            <view class='n-item' data-index="4" bindtap='tab'>待发货</view>
+            <view class='n-item' data-index="5" bindtap='tab'>待收货</view>
+            <view class='n-item' data-index="8" bindtap='tab'>退换货</view>
+            <view class='n-item' data-index="9" bindtap='tab'>退换货</view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>
