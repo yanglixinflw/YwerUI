@@ -90,6 +90,21 @@ Page({
       complete: function (res) { }
     })
   },
+  model4(){
+    var that = this;
+    wx.showToast({
+      title: '操作成功',
+      icon: 'none',
+      duration: 2000,
+      success: function () {
+        setTimeout(function () {
+          wx.navigateTo({
+            url: '../index/index',
+          })
+        }, 1000);
+      }
+    })
+  },
   //返回上一级页面
   back() {
     wx.navigateBack({

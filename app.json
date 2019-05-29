@@ -12,7 +12,8 @@
     "pages/upload/upload",
     "pages/getData/getData",
     "pages/pathParam/pathParam",
-    "pages/scrollView/scrollView"
+    "pages/scrollView/scrollView",
+    "pages/silder/silder"
   ],
   "window": {
     "navigationStyle": "custom",

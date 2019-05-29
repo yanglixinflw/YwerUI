@@ -4,27 +4,31 @@
     <view class="status-bar" style="height:{{statusBarHeight}}px"></view>
     <view class="title-bar" style="height:{{titleBarHeight}}px">
       <view class='return' bindtap="back"><image class='back' src='../../images/back.png'></image></view>
-      <view class='title'>自定义空页</view>
+      <view class='title'>交互提示</view>
       <view class="tablet"></view>
     </view>
   </view>
   <view class='body'>
     <view class='main'>
 
-    
+      <!-- 普通模式三种交互框 -->
       <view class='box'>
         <view bindtap='model1'>showToast</view>
         <view bindtap='model2'>showModal</view>
         <view bindtap='model3'>showActionSheet</view>
       </view>
 
-
+      <!-- 自定义提示框 -->
       <modal hidden="{{hiddenmodalput}}" title="完善资料" confirm-text="提交" cancel-text="取消" bindcancel="cancelM" bindconfirm="confirmM">
         <input bindinput='iName' type='text' placeholder="请输入姓名" auto-focus/>
         <input bindinput='iPhoneNum' type='number' placeholder="请输入手机号码" />
       </modal>
 
 <!-- <view class='dtl'>https://blog.csdn.net/yingtian648/article/details/80004334</view> -->
+
+      <!-- 提示框点击确定后几秒后跳回首页 -->
+      <view bindtap='model4'>成功后会首页</view>
+
     </view>
   </view>
 </view>

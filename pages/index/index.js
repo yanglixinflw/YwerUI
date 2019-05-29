@@ -120,6 +120,12 @@ Page({
         name: "左滑删除",
         pathUrl: "/pages/del/del",
         like: true
+      }, 
+      {
+        id: 3,
+        name: "刻度尺",
+        pathUrl: "/pages/silder/silder",
+        like: false
       },
     ],
     pathUrlList03:[]

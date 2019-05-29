@@ -10,6 +10,12 @@ App({
     // }
     wx.getSystemInfo({
       success: function (res) {
+
+        // 设备信息(此三条)
+        vm.screenWidth = res.windowWidth;
+        vm.screenHeight = res.windowHeight;
+        vm.pixelRatio = res.pixelRatio;
+
         let totalTopHeight = 68
         if (res.model.indexOf('iPhone X') !== -1) {
           totalTopHeight = 88
