@@ -125,7 +125,13 @@ Page({
         id: 3,
         name: "刻度尺",
         pathUrl: "/pages/silder/silder",
-        like: false
+        like: true
+      }, 
+      {
+        id: 4,
+        name: "复制文本",
+        pathUrl: "/pages/copy/copy",
+        like: true
       },
     ],
     pathUrlList03:[]
