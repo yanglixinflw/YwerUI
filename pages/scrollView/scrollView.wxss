@@ -79,3 +79,10 @@ page {
 .nav .on{
   border-bottom:2px solid #f1aea5;
 }
+.scr{
+    position: relative;
+    height: auto
+}
+.test{
+    height: 80rpx;
+}

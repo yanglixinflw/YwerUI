@@ -1,0 +1,36 @@
+<!--pages/tab/tab.wxml-->
+<view class="container" style="padding-top:{{statusBarHeight+titleBarHeight}}px">
+  <view class="header">
+    <view class="status-bar" style="height:{{statusBarHeight}}px"></view>
+    <view class="title-bar" style="height:{{titleBarHeight}}px">
+      <view class='return' bindtap="back"><image class='back' src='../../images/back.png'></image></view>
+      <view class='title'>tabBar</view>
+      <view class="tablet"></view>
+    </view>
+  </view>
+  <view class='body'>
+    <view class='main'>
+      <!-- app.json里面如下配置 -->
+  "tabBar": {
+    "color": "#cdcdcd", //为本未选中时候的颜色
+    "selectedColor": "#ec6376", //为本选中时的颜色  
+    "backgroundColor": "#eee", //背景
+    "borderStyle": "#f3c4cb", //边框颜色  
+    "list": [
+      {
+        "selectedIconPath": "img/icon12.png", //选中时的图标路径
+        "iconPath": "img/icon11.png", //未选中的路径  
+        "pagePath": "pages/index/index", //要加载的页面路径  
+        "text": "首页" //显示的文本  
+      },
+      {
+        "selectedIconPath": "img/icon22.png",
+        "iconPath": "img/icon21.png",
+        "pagePath": "pages/myHome/myHome",
+        "text": "我的"
+      }
+    ]
+  },
+    </view>
+  </view>
+</view>

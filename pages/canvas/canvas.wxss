@@ -1,4 +1,4 @@
-/* pages/share/share.wxss */
+/* pages/canvas/canvas.wxss */
 page {
   height: auto;  
   background: #fefefe
@@ -52,10 +52,12 @@ page {
   height: 100%;
   margin:auto;
 }
-button{
-  width: 50%;
+
+
+.saveImg{
+  position: absolute;
+  bottom: 10px;
+  width: 90%;
+  left: 5%;
+  height: 50px;
 }
-button[plain]{ 
-  border:1px solid #ff5400;
-  border-radius: 8rpx; 
-} 

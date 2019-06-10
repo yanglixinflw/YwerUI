@@ -27,11 +27,11 @@ Page({
          pathUrl: "/pages/login/login",
          like: true,
       },
-      {
-        id: 5,
-        name: "Canvas导出图片",
-        pathUrl: "/pages/onlineHot/onlineHot"
-      },
+      // {
+      //   id: 5,
+      //   name: "Canvas导出图片",
+      //   pathUrl: "/pages/canvas/canvas"
+      // },
       {
         id: 6,
         name: "小程序弹窗提示(wx.Toast)",
@@ -47,28 +47,31 @@ Page({
       {
         id: 8,
         name: "小程序MD5加密写法（支持加密中文）",
-        pathUrl: "/pages/onlineHot/onlineHot"
+        pathUrl: "/pages/md5/md5",
+        like: true,
       },
       {
         id: 9,
         name: "锚点效果",
-        pathUrl: "/pages/onlineHot/onlineHot"
+        pathUrl: "/pages/a/a",
+        like: true,
       },
-      {
-        id: 10,
-        name: "导航栏吸顶效果 ",
-        pathUrl: "/pages/onlineHot/onlineHot"
-      },
+      // {
+      //   id: 10,
+      //   name: "导航栏吸顶效果 ",
+      //   pathUrl: "/pages/mounting/mounting",
+      //   like: true,
+      // },
       {
         id: 11,
         name: "获取屏幕当前高度并赋值给某个view",
         pathUrl: "/pages/onlineHot/onlineHot"
       },
-      {
-        id: 12,
-        name: "图片裁剪功能",
-        pathUrl: "/pages/onlineHot/onlineHot"
-      },
+      // {
+      //   id: 12,
+      //   name: "图片裁剪功能",
+      //   pathUrl: "/pages/onlineHot/onlineHot"
+      // },
       {
         id: 13,
         name: "自定义空页",
@@ -83,7 +86,8 @@ Page({
       {
         id: 15,
         name: "tab切换功能",
-        pathUrl: "/pages/onlineHot/onlineHot"
+        pathUrl: "/pages/tab/tab",
+        like: true,
       },
       {
         id: 16,
@@ -131,6 +135,12 @@ Page({
         id: 4,
         name: "复制文本",
         pathUrl: "/pages/copy/copy",
+        like: true
+      },
+      {
+        id: 5,
+        name: "清除表情和空格",
+        pathUrl: "/pages/cleanEmoji/cleanEmoji",
         like: true
       },
     ],

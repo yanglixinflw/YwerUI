@@ -1,0 +1,17 @@
+<!--pages/cleanEmoji/cleanEmoji.wxml-->
+<view class="container" style="padding-top:{{statusBarHeight+titleBarHeight}}px">
+  <view class="header">
+    <view class="status-bar" style="height:{{statusBarHeight}}px"></view>
+    <view class="title-bar" style="height:{{titleBarHeight}}px">
+      <view class='return' bindtap="back"><image class='back' src='../../images/back.png'></image></view>
+      <view class='title'>清除input中的表情和空格</view>
+      <view class="tablet"></view>
+    </view>
+  </view>
+  <view class='body'>
+    <view class='main'>
+      <input class='input' bindinput='input'></input>
+      <textarea class='textarea'></textarea>
+    </view>
+  </view>
+</view>

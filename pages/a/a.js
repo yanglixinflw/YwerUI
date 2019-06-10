@@ -1,16 +1,9 @@
-// pages/scrollView/scrollView.js
+// pages/a/a.js
 const app = getApp()
 Page({
   data: {
-    //tab栏
-    tabs: ["全部", "待付款", "待发货", "待收货", "已完成","已作废"],
-    //tab栏索引
-    activeIndex: 0,
-    //页面数据
-    data: [],
-    //每条列表的高度
-    tabBoxHeight: 80,
     list: ["list0", "list1", "list2", "list3", "list4", "list5", "list11", "list12", "list13", "list14", "list15", "list25", "list26", "list27", "list28", "list29", "list30"],
+    toView: '',
   },
   onReady: function () {
     //设置自定义头部的高度
@@ -22,20 +15,13 @@ Page({
       add: add,
     })
   },
-  //tab切换
-  tab(e) {
-    var that = this;
-    var idIndex = e.currentTarget.id;
+  //跳转
+  jumpTo: function (e) {
+    // 获取标签元素上自定义的 data-opt 属性的值
+    let target = e.currentTarget.dataset.opt;
     this.setData({
-      activeIndex: idIndex,
-    });
-  },
-  //
-  bindChange: function (e) {
-    var current = e.detail.current;
-    this.setData({
-      activeIndex: current,
-    });
+      toView: target
+    })
   },
   //返回上一级页面
   back() {

@@ -1,4 +1,16 @@
 <!--pages/scrollView/scrollView.wxml-->
+<wxs module="filter">
+    var getHeight = function (tabBoxHeight, length){
+        var height = ''
+        if (length > 0){
+            height = tabBoxHeight * length+30
+        }
+        return height
+    }
+    module.exports = {
+        getHeight: getHeight
+    }
+</wxs>
 <view class="container" style="padding-top:{{statusBarHeight+titleBarHeight}}px">
   <view class="header">
     <view class="status-bar" style="height:{{statusBarHeight}}px"></view>
@@ -19,6 +31,12 @@
         </view>
       </scroll-view>
       
+      <scroll-view  scroll-into-view="{{toView}}" style="height:{{filter.getHeight(tabBoxHeight, list.length)}}rpx" scroll-y="true"   scroll-with-animation="true"   class="scr">
+          <view wx:for="{{list}}"  id="{{item}}"  class="test" wx:key=''>
+            {{item}}
+          </view>
+      </scroll-view>
+
     </view>
   </view>
 </view>

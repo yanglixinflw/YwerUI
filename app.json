@@ -1,6 +1,12 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/mounting/mounting", 
+    "pages/a/a",
+    "pages/md5/md5",
+    "pages/tab/tab",
+    "pages/canvas/canvas",
+    "pages/cleanEmoji/cleanEmoji",
     "pages/copy/copy",
     "pages/del/del", 
     "pages/custom/custom",
