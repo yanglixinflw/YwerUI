@@ -65,6 +65,44 @@
       </view>
 
 
+<!-- 数字轮播 -->
+      <view>数字轮播</view>
+      <view class='lunbo3'>
+          <swiper bindchange="swiperChange" class="swiper3" ator-dots="true" circular="true" current='{current}' autoplay='true' interval="5000" duration="1000">
+            <swiper-item wx:for="{{lunboList}}" wx:key="" wx:for-item="item">
+              <image src="{{item.src}}"></image>
+            </swiper-item>
+          </swiper>
+          <view class="imageCount">
+            {{current}}/{{length}}
+          </view>
+      </view>
+
+
+
+  <!-- 两边不透明度轮播 -->
+      <view>当前高亮轮播</view>
+      <swiper class='swiper4'  indicator-color="#d6d6d6" bindchange="intervalChanges" indicator-active-color="#77c111" autoplay="true"  circular="true" previous-margin="70rpx" next-margin="50rpx">
+        <block wx:for="{{swiperList}}" wx:for-index="index" wx:for-item="item" wx:key="id">
+          <swiper-item class='swiper-item4'>
+            <view class='img_box4' id="{{index}}" bindtap='painterHome'>
+              <view class='marks' wx:if="{{index!=currents}}">
+                <image src='{{item.src}}'></image>
+              </view>
+              <view class='noMarks' wx:else>
+                <image src='{{item.src}}'></image>
+              </view>
+              <view class='con'>
+                <view class='name'>{{item.name}}</view>
+                <view class='compony'>创始人 | {{item.introduce}}</view>
+              </view>
+            </view>
+          </swiper-item>
+        </block> 
+      </swiper>
+
+
+
     </view>
   </view>
 </view>

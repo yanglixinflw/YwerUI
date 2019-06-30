@@ -31,6 +31,27 @@ Page({
     },
     //大图的地址赋值
     worksSrc: "../../images/works.png",
+    //数字轮播配置项
+    //轮播图列表
+    lunboList:[
+      { id: 1, src: "../../images/works2.png" },
+      { id: 2, src: "../../images/works.png" },
+      { id: 3, src: "../../images/works2.png" },
+      { id: 4, src: "../../images/works2.png" },
+    ],
+    //当前图的位置
+    current:1,
+    //图片列表长度
+    length:4,
+    //当前项高亮轮播
+    //轮播列表
+    swiperList: [
+      { id: 0, src: "../../images/starPaint.png", name: "马塞尔 万德斯", introduce: "上海杰思文化创意有限公司" },
+      { id: 1, src: "../../images/starPaint.png", name: "马塞尔 万德斯", introduce: "上海杰思文化创意有限公司" },
+      { id: 2, src: "../../images/starPaint.png", name: "马塞尔 万德斯", introduce: "上海杰思文化创意有限公司" }
+    ],
+    //当前的轮播显示图片
+    currents: ""
   },
   onReady: function () {
     //设置自定义头部的高度
@@ -42,11 +63,14 @@ Page({
       add: add,
     })
   },
+  
+  //上下轮播的初始化数据
   onLoad() {
     this.setData({
       worksSrc: this.data.swiper.works[0].src
     })
   },
+  //自动切换执行的动作
   intervalChange(e) {
     this.setData({
       worksSrc: this.data.swiper.works[e.detail.current].src
@@ -74,6 +98,21 @@ Page({
   clickPic(e) {
     this.setData({
       worksSrc: this.data.swiper.works[e.currentTarget.id].src
+    })
+  },
+
+  //数字轮播
+  //轮播获取当前索引
+  swiperChange(e) {
+    this.setData({
+      current: e.detail.current + 1   //获取当前轮播图片的下标
+    })
+  },
+  //高亮轮播
+  //当前图片
+  intervalChanges(e) {
+    this.setData({
+      currents: e.detail.current
     })
   },
   //返回上一级页面

@@ -155,3 +155,82 @@ swiper-item video {
   display: block;
   margin: 10rpx auto;
 }
+
+
+/* 数字轮播 */
+.lunbo3{
+  width: 100%;
+  height: 500rpx;
+  position: relative;
+}
+.swiper3{
+  width: 100%;
+  height: 100%;
+}
+.swiper3 image{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.imageCount{
+  width: 80rpx;
+  height: 40rpx;
+  border-radius: 6rpx;
+  background: #ffffff;
+  position: absolute;
+  bottom: 40rpx;
+  right: 40rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+/* 中间高亮轮播 */
+.swiper4{
+  width:100%;
+  height: 898rpx;
+  margin-top: 60rpx;
+}
+.swiper-item4{
+  width:550rpx;
+  height: 868rpx;
+}
+.img_box4{
+  width:550rpx;
+  height: 868rpx;
+  background: #ffffff;
+  box-shadow: 4rpx 4rpx 30rpx 10rpx #ebebeb;
+}
+.marks{
+  width: 550rpx;
+  height: 600rpx;
+  opacity: .6
+}
+.noMarks{
+  width: 550rpx;
+  height: 600rpx;
+}
+.img_box4 image{
+  width: 550rpx;
+  height: 600rpx;
+  display: block
+}
+.con{
+  width: 100%;
+  height: 268rpx;
+  overflow: hidden
+}
+.name{
+  font-size: 40rpx;
+  color: #77c112;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin: 30rpx 0 0 30rpx;
+}
+.compony{
+  font-size: 28rpx;
+  margin: 24rpx 0 0 30rpx;
+  color: #aaaaaa;
+}
