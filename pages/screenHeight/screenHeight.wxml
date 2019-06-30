@@ -1,0 +1,18 @@
+<!--pages/screenHeight/screenHeight.wxml-->
+<view class="container" style="padding-top:{{statusBarHeight+titleBarHeight}}px">
+  <view class="header">
+    <view class="status-bar" style="height:{{statusBarHeight}}px"></view>
+    <view class="title-bar" style="height:{{titleBarHeight}}px">
+      <view class='return' bindtap="back"><image class='back' src='../../images/back.png'></image></view>
+      <view class='title'>获取屏幕高度并赋值</view>
+      <view class="tablet"></view>
+    </view>
+  </view>
+  <view class='body'>
+    <view class='main'>
+
+      <view class='red' style="height:{{bodyHeight}}px"></view>
+
+    </view>
+  </view>
+</view>

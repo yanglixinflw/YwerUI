@@ -1,0 +1,112 @@
+<!--pages/pullCase/pullCase.wxml-->
+<view class="container" style="padding-top:{{statusBarHeight+titleBarHeight}}px">
+  <view class="header">
+    <view class="status-bar" style="height:{{statusBarHeight}}px"></view>
+    <view class="title-bar" style="height:{{titleBarHeight}}px">
+      <view class='return' bindtap="back"><image class='back' src='../../images/back.png'></image></view>
+      <view class='title'>下拉框</view>
+      <view class="tablet"></view>
+    </view>
+  </view>
+  <view class='body'>
+    <view class='main'>
+      
+    <!-- 单选类型的下拉框 -->
+    <!-- 下拉选择框 -->
+      <view class='pull' style="top:{{statusBarHeight+titleBarHeight}}px">
+        <view class='pull-list {{isBrand?"on":""}}' bindtap='isBrand'>
+          <view class='pull-name'>{{brandValue}}</view>
+          <view class='triangle'></view>
+        </view>
+        <view class='pull-list {{isType?"on":""}}' bindtap='isType'>
+          <view class='pull-name'>{{typeValue}}</view>
+          <view class='triangle'></view>
+        </view>
+        <view class='pull-list {{isYear?"on":""}}' bindtap='isYear'>
+          <view class='pull-name'>{{yearValue}}</view>
+          <view class='triangle'></view>
+        </view>
+        <view class='pull-list {{isSize?"on":""}}' bindtap='isSize'>
+          <view class='pull-name'>{{sizeValue}}</view>
+          <view class='triangle'></view>
+        </view>
+      </view>
+      <view class='kong'></view>
+      <!-- 品牌下拉选项 -->
+      <view class="{{isBrand?'brand-option':'none'}}" style="top:{{statusBarHeight+titleBarHeight+42}}px">
+        <radio-group class="option-list" bindchange="brandChange">
+          <label class="brand-radio" wx:for="{{brandOption}}" wx:for-item="item" wx:key=''>
+            <view wx:if="{{item.isChecked==true}}" class='red'>
+              <radio value="{{item.id}}" checked="{{item.isChecked}}"/>{{item.value}}
+              <image src="../../images/18.png"></image> 
+            </view>
+            <view wx:else>
+              <radio value="{{item.id}}" checked="{{item.isChecked}}"/>{{item.value}}
+            </view>
+          </label>
+        </radio-group>
+      </view>
+      <!-- 车系下拉选项 -->
+      <view class="{{isType?'type-option':'none'}}" style="top:{{statusBarHeight+titleBarHeight+42}}px">
+        <radio-group class="option-list" bindchange="typeChange">
+          <label class="type-radio" wx:for="{{typeOption}}" wx:for-item="item" wx:key=''>
+            <view wx:if="{{item.isChecked==true}}" class='red'>
+              <radio value="{{item.id}}" checked="{{item.isChecked}}"/>{{item.value}}
+              <image src="../../images/18.png"></image> 
+            </view>
+            <view wx:else>
+              <radio value="{{item.id}}" checked="{{item.isChecked}}"/>{{item.value}}
+            </view>
+          </label>
+        </radio-group>
+      </view>
+      <!-- 年份下拉选项 -->
+      <view class="{{isYear?'year-option':'none'}}" style="top:{{statusBarHeight+titleBarHeight+42}}px">
+        <radio-group class="option-list" bindchange="yearChange">
+          <label class="year-radio" wx:for="{{yearOption}}" wx:for-item="item" wx:key=''>
+            <view wx:if="{{item.isChecked==true}}" class='red'>
+              <radio value="{{item.id}}" checked="{{item.isChecked}}"/>{{item.value}}
+              <image src="../../images/18.png"></image> 
+            </view>
+            <view wx:else>
+              <radio value="{{item.id}}" checked="{{item.isChecked}}"/>{{item.value}}
+            </view>
+          </label>
+        </radio-group>
+      </view>
+      <!-- 尺寸下拉选项 -->
+      <view class="{{isSize?'size-option':'none'}}" style="top:{{statusBarHeight+titleBarHeight+42}}px">
+        <radio-group class="option-list" bindchange="sizeChange">
+          <label class="size-radio" wx:for="{{sizeOption}}" wx:for-item="item" wx:key=''>
+            <view wx:if="{{item.isChecked==true}}" class='red'>
+              <radio value="{{item.id}}" checked="{{item.isChecked}}"/>{{item.value}}
+              <image src="../../images/18.png"></image> 
+            </view>
+            <view wx:else>
+              <radio value="{{item.id}}" checked="{{item.isChecked}}"/>{{item.value}}
+            </view>
+          </label>
+        </radio-group>
+      </view>
+
+
+      <!-- 点击获取值的下拉框 -->
+        <!-- 省份 -->
+        <view class='province'>
+          <view class='position' bindtap='province'>
+            <view class='pos'>
+              <image src='../../images/19.png'></image>
+              <view>{{provinceValue}}</view>
+            </view>
+            <image class='xiangxia' src='../../images/20.png'></image>
+          </view>
+          <view class='provinceUl' hidden='{{isProvince}}'>
+            <block wx:for="{{provinceList}}" wx:key="">
+              <view class='provinceLi' data-id='{{item.id}}' data-value="{{item.value}}" bindtap='checkedProvince'>{{item.value}}</view>
+            </block>
+          </view>
+        </view>
+
+    </view>
+  </view>
+</view>

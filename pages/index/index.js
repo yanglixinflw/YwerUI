@@ -65,7 +65,8 @@ Page({
       {
         id: 11,
         name: "获取屏幕当前高度并赋值给某个view",
-        pathUrl: "/pages/onlineHot/onlineHot"
+        pathUrl: "/pages/screenHeight/screenHeight",
+        like: true,
       },
       // {
       //   id: 12,
@@ -81,7 +82,8 @@ Page({
       {
         id: 14,
         name: "解决 分享出去的页面没有返回按钮的方法",
-        pathUrl: "/pages/onlineHot/onlineHot"
+        pathUrl: "/pages/share_return/share_return",
+        like: true,
       },
       {
         id: 15,
@@ -98,7 +100,8 @@ Page({
       {
         id: 17,
         name: "使用setData修改data中子对象的属性值",
-        pathUrl: "/pages/onlineHot/onlineHot"
+        pathUrl: "/pages/edit_setData/edit_setData",
+        like: true,
       },
       {
         id: 18,
@@ -141,6 +144,12 @@ Page({
         id: 5,
         name: "清除表情和空格",
         pathUrl: "/pages/cleanEmoji/cleanEmoji",
+        like: true
+      },
+      {
+        id: 6,
+        name: "下拉框",
+        pathUrl: "/pages/pullCase/pullCase",
         like: true
       },
     ],

@@ -1,0 +1,210 @@
+/* pages/pullCase/pullCase.wxss */
+page {
+  height: auto;  
+  background: #eeeeee;
+}
+.container {
+  box-sizing: border-box;
+  height: 100%;
+}
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background: #ffffff;
+}
+.status-bar {
+  background: #ffffff;
+}
+.title-bar {
+  width: 92%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.return{
+  width: 80rpx;
+  height: 80rpx;
+  overflow: hidden
+}
+.back{
+  width: 19rpx;
+  height: 32rpx;
+  display: block;
+  margin:30rpx 0 0 6rpx;
+}
+.title{
+  min-width: 132rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+.tablet{
+  width: 80rpx;
+}
+.body{
+  width: 100%;
+  height: auto;  
+}
+.main{
+  width: 92%;
+  height: 100%;
+  margin:auto;
+}
+.pull{
+  width: 100%;
+  height: 80rpx;
+  background: #ffffff;
+  line-height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  color: #999999;
+  border-top: 2rpx solid #f7f7f7;
+  border-bottom: 2rpx solid #f7f7f7;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 999
+}
+.kong{
+  width: 100%;
+  height: 82rpx;
+}
+.pull-list{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.pull-name{
+  font-weight: bold;
+  max-width:90rpx;
+  width: auto;
+  overflow: hidden;
+  transition: all ease .8s
+}
+.triangle{
+  width: 0; 
+  height: 0;
+  margin: 38rpx 0 0 22rpx;
+  border-width: 8rpx;
+  border-style: solid;
+  border-color:#999999 transparent transparent transparent;
+  transition: all ease .8s
+}
+.on .pull-name{
+  color: #911c36;
+  transition: all ease .8s
+}
+.on .triangle{
+  width: 0; 
+  height: 0;
+  margin: 28rpx 0 0 22rpx;
+  border-width: 8rpx;
+  border-style: solid;
+  border-color: transparent transparent #911c36 transparent;
+  transition: all ease .8s
+}
+.brand-option,.type-option,.year-option,.size-option{
+  width: 100%;
+  max-height: 730rpx;
+  height: auto;
+  border-top: 2rpx solid #e8e8e8;
+  overflow: auto;
+  position: fixed;
+  top:82rpx;
+  left: 0;
+  background: #ffffff;
+}
+.brand-radio,.type-radio,.year-radio,.size-radio{
+  width: 90%;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 2rpx solid #e8e8e8;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  margin: auto;
+  display: block;
+}
+.brand-radio view,.type-radio view,.year-radio view,.size-radio view{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.red{
+  color: #911d35;
+}
+.brand-radio image,.type-radio image,.year-radio image,.size-radio image{
+  width: 30rpx;
+  height: 24rpx;
+  margin-top: 26rpx;
+}
+radio{
+  display: none;
+}
+.none{
+  display: none;
+}
+
+
+/* 点击下拉框 */
+.province{
+  width: 90%;
+  height: 80rpx;
+  margin: 30rpx auto;
+  padding: 24rpx 20rpx;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 12rpx;
+  position: relative;
+}
+.position{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.pos{
+  min-width: 180rpx;
+  display: flex;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  color: #999999;
+}
+.pos image{
+  width: 25rpx;
+  height: 30rpx;
+  display: block;
+  margin-right: 23rpx;
+}
+.position>image{
+  width: 36rpx;
+  height: 19rpx;
+  margin-top: 8rpx;
+}
+.provinceUl{
+  position: absolute;
+  top:76rpx;
+  left: 0;
+  width: 100%;
+  max-height: 60vh;
+  height: auto;
+  overflow: auto;
+  background: #ffffff;
+}
+.provinceLi{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: left;
+  font-size: 28rpx;
+  color: #999999;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #e8e8e8;
+}

@@ -11,7 +11,7 @@ App({
     wx.getSystemInfo({
       success: function (res) {
 
-        // 设备信息(此三条)
+        // 设备信息(此三条,用于做刻度尺)
         vm.screenWidth = res.windowWidth;
         vm.screenHeight = res.windowHeight;
         vm.pixelRatio = res.pixelRatio;

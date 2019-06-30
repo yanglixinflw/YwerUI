@@ -1,6 +1,10 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/pullCase/pullCase",
+    "pages/edit_setData/edit_setData",
+    "pages/share_return/share_return",
+    "pages/screenHeight/screenHeight",
     "pages/mounting/mounting", 
     "pages/a/a",
     "pages/md5/md5",

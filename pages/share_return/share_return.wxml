@@ -1,0 +1,47 @@
+<!--pages/share_return/share_return.wxml-->
+<view class="container" style="padding-top:{{statusBarHeight+titleBarHeight}}px">
+  <view class="header">
+    <view class="status-bar" style="height:{{statusBarHeight}}px"></view>
+    <view class="title-bar" style="height:{{titleBarHeight}}px">
+      <view class='return' bindtap="back"><image class='back' src='../../images/back.png'></image></view>
+      <view class='title'>从分享出去的页面进去</view>
+      <view class="tablet"></view>
+    </view>
+  </view>
+  <view class='body'>
+    <view class='main'>
+
+      <text>
+      当页js
+      onShareAppMessage: function (res) {
+        if (res.from === 'button') {
+        // 来自页面内转发按钮
+        console.log(res.target)
+        }
+        return {
+          title: '自定义转发标题',
+          path: '/pages/index/index?pageId=123',//这里在首页的地址后面添加我们需            要传值的标识位pageId以及值123(pageId 这个名字你们可以自己随便乱取)
+          success: function (res) {
+          // 转发成功
+          },
+          fail: function (res) {
+            // 转发失败
+          }
+        }
+      },
+      </text>
+      <text>
+      首页js
+        onLoad: function (options) {
+          //判断是否是分享页面进来的人
+          if (options.pageId) {
+            //这个pageId的值存在则证明首页的开启来源于用户点击来首页,同时可以通过获取到的pageId的值跳转导航到对应的详情页
+            wx.navigateTo({
+              url: '../share/share?pageId=' + options.pageId,
+            })
+          }
+        },
+      </text>
+    </view>
+  </view>
+</view>

@@ -28,10 +28,26 @@ Page({
         const tempFilePaths = res.tempFilePaths
         var imgs = that.data.images.concat(tempFilePaths)
         var rest = 12 - imgs.length
-        that.setData({
-          images: imgs,
-          rest: rest
-        });
+        //上传图片到服务器
+        for (var i = 0; i < res.tempFilePaths.length; i++) {
+          wx.uploadFile({
+            url: app.api.apiurl + '', // 上传图片接口
+            filePath: imgs[i],
+            name: 'file',
+            formData: {
+              //这个里面传除了图片之外的其他字段
+            },
+            header: {
+              'content-type': 'multipart/form-data',
+            },
+            success(res) {
+              that.setData({
+                images: imgs,
+                rest: rest
+              });
+            },
+          })
+        }
       }
     })
   },
