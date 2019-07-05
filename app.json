@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/editor/editor",
     "pages/pullCase/pullCase",
     "pages/edit_setData/edit_setData",
     "pages/share_return/share_return",

@@ -1,0 +1,24 @@
+<!--pages/editor/editor.wxml-->
+<!-- 引入富文本 -->
+<import src="../../wxParse/wxParse.wxml"/>
+<view class="container" style="padding-top:{{statusBarHeight+titleBarHeight}}px">
+  <view class="header">
+    <view class="status-bar" style="height:{{statusBarHeight}}px"></view>
+    <view class="title-bar" style="height:{{titleBarHeight}}px">
+      <view class='return' bindtap="back"><image class='back' src='../../images/back.png'></image></view>
+      <view class='title'>富文本</view>
+      <view class="tablet"></view>
+    </view>
+  </view>
+  <view class='body'>
+    <view class='main'>
+      
+      <!-- 输出富文本的内容 -->
+      <!-- 内容 -->
+      <view class='content'>
+        <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+      </view>
+
+    </view>
+  </view>
+</view>

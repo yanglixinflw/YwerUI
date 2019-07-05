@@ -152,6 +152,12 @@ Page({
         pathUrl: "/pages/pullCase/pullCase",
         like: true
       },
+      {
+        id:7,
+        name: "富文本",
+        pathUrl: "/pages/editor/editor",
+        like: true
+      },
     ],
     pathUrlList03:[]
   },
