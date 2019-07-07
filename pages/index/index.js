@@ -157,6 +157,18 @@ Page({
         name: "富文本",
         pathUrl: "/pages/editor/editor",
         like: true
+      }, 
+      {
+        id: 8,
+        name: "echarts",
+        pathUrl: "/pages/echarts/echarts",
+        like: true
+      },
+      {
+        id: 9,
+        name: "拖动效果实现",
+        pathUrl: "/pages/drag/drag",
+        like: true
       },
     ],
     pathUrlList03:[]

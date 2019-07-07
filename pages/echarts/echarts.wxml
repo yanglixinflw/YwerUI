@@ -1,0 +1,25 @@
+<!--pages/echarts/echarts.wxml-->
+<view class="container" style="padding-top:{{statusBarHeight+titleBarHeight}}px">
+  <view class="header">
+    <view class="status-bar" style="height:{{statusBarHeight}}px"></view>
+    <view class="title-bar" style="height:{{titleBarHeight}}px">
+      <view class='return' bindtap="back"><image class='back' src='../../images/back.png'></image></view>
+      <view class='title'>Echarts</view>
+      <view class="tablet"></view>
+    </view>
+  </view>
+  <view class='body'>
+    <view class='main'>
+         
+
+        <view class="containers">
+          <view class="unit">温度/℃</view>
+          <view class='boxs'>
+            <canvas canvas-id="lineCanvas" bindtouchstart="plot"></canvas>
+          </view>
+        </view>
+
+
+    </view>
+  </view>
+</view>

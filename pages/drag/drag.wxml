@@ -1,0 +1,21 @@
+<!--pages/drag/drag.wxml-->
+<view class="container" style="padding-top:{{statusBarHeight+titleBarHeight}}px">
+  <view class="header">
+    <view class="status-bar" style="height:{{statusBarHeight}}px"></view>
+    <view class="title-bar" style="height:{{titleBarHeight}}px">
+      <view class='return' bindtap="back"><image class='back' src='../../images/back.png'></image></view>
+      <view class='title'>拖拽移动</view>
+      <view class="tablet"></view>
+    </view>
+  </view>
+  <view class='body'>
+    <view class='main'>
+
+
+      <view class="view" style="left:{{left}}px;top:{{top}}px;position:absolute" bindtouchmove="viewTouchMove">拖我</view>
+
+
+    </view>
+  </view>
+</view>
+

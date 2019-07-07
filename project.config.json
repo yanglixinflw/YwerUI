@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 8,
+			"current": 10,
 			"list": [
 				{
 					"id": -1,
@@ -98,6 +98,20 @@
 					"id": -1,
 					"name": "下拉框",
 					"pathName": "pages/pullCase/pullCase",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "echarts",
+					"pathName": "pages/echarts/echarts",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "拖拽",
+					"pathName": "pages/drag/drag",
 					"scene": null
 				}
 			]

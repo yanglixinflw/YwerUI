@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/drag/drag",
+    "pages/echarts/echarts",
     "pages/editor/editor",
     "pages/pullCase/pullCase",
     "pages/edit_setData/edit_setData",
