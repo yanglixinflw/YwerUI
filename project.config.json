@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 10,
+			"current": 12,
 			"list": [
 				{
 					"id": -1,
@@ -112,6 +112,20 @@
 					"id": -1,
 					"name": "拖拽",
 					"pathName": "pages/drag/drag",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "头部导航2",
+					"pathName": "pages/changeNav/changeNav",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "扫码",
+					"pathName": "pages/scan/scan",
 					"scene": null
 				}
 			]

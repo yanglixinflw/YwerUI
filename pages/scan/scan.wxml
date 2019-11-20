@@ -1,0 +1,24 @@
+<!--pages/scan/scan.wxml-->
+<view class="container" style="padding-top:{{statusBarHeight+titleBarHeight}}px">
+  <view class="header">
+    <view class="status-bar" style="height:{{statusBarHeight}}px"></view>
+    <view class="title-bar" style="height:{{titleBarHeight}}px">
+      <view class='return' bindtap="back">
+        <image class='back' src='../../images/back.png'></image>
+      </view>
+      <view class='title'>微信扫码</view>
+      <view class="tablet"></view>
+    </view>
+  </view>
+  <view class='body'>
+    <view class='main'>
+
+      <view class='scan' bindtap="scan">
+        <image src='../../images/saomiao.png'></image>
+        <view>扫描条形码</view>
+      </view>
+      <input value="{{cardNum}}" class='card' placeholder="卡号" bindinput="cardNum" type='text' maxlength="16"></input>
+      
+    </view>
+  </view>
+</view>

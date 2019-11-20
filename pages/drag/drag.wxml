@@ -12,7 +12,7 @@
     <view class='main'>
 
 
-      <view class="view" style="left:{{left}}px;top:{{top}}px;position:absolute" bindtouchmove="viewTouchMove">拖我</view>
+      <view class="view" style="left:{{left}}px;top:{{top}}px;position:fixed" bindtouchmove="viewTouchMove">拖我</view>
 
 
     </view>

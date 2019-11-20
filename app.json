@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/js-vcode/js-vcode",
     "pages/drag/drag",
     "pages/echarts/echarts",
     "pages/editor/editor",
@@ -27,7 +28,9 @@
     "pages/getData/getData",
     "pages/pathParam/pathParam",
     "pages/scrollView/scrollView",
-    "pages/silder/silder"
+    "pages/silder/silder",
+    "pages/changeNav/changeNav",
+    "pages/scan/scan"
   ],
   "window": {
     "navigationStyle": "custom",

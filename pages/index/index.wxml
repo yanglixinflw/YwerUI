@@ -16,7 +16,7 @@
      <!-- 第一页 -->
       <view class='section' wx:if="{{status==1}}"> 
         <block wx:for="{{pathUrlList01}}" wx:key="{{index}}" >
-          <navigator class='s-item' hover-class='none' url='{{item.pathUrl}}' style='{{item.like?"color:purple;":""}}'>
+          <navigator class='s-item' hover-class='none' url='{{item.pathUrl}}' style='{{item.like?"color:#000;":""}}'>
                   {{item.name}}
           </navigator>
         </block>
@@ -24,7 +24,7 @@
       <!-- 第二页 -->
       <view class='section' wx:if="{{status==2}}"> 
         <block wx:for="{{pathUrlList02}}" wx:key="{{index}}" >
-          <navigator class='s-item' hover-class='none' url='{{item.pathUrl}}' style='{{item.like?"color:purple;":""}}'>
+          <navigator class='s-item' hover-class='none' url='{{item.pathUrl}}' style='{{item.like?"color:#000;":""}}'>
                   {{item.name}}
           </navigator>
         </block>
@@ -32,7 +32,7 @@
       <!-- 第三页 -->
       <view class='section' wx:if="{{status==3}}"> 
         <block wx:for="{{pathUrlList03}}" wx:key="{{index}}" >
-          <navigator class='s-item' hover-class='none' url='{{item.pathUrl}}' style='{{item.like?"color:purple;":""}}'>
+          <navigator class='s-item' hover-class='none' url='{{item.pathUrl}}' style='{{item.like?"color:#000;":""}}'>
                   {{item.name}}
           </navigator>
         </block>

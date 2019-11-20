@@ -1,0 +1,61 @@
+<!--pages/changeNav/changeNav.wxml-->
+<view class="container" style="padding-top:{{statusBarHeight+titleBarHeight}}px">
+  <view class="header">
+    <view class="status-bar" style="height:{{statusBarHeight}}px"></view>
+    <view class="title-bar" style="height:{{titleBarHeight}}px">
+      <view class='return' bindtap="back">
+        <image class='back' src='../../images/back.png'></image>
+      </view>
+      <view class='title'>头部导航2</view>
+      <view class="tablet"></view>
+    </view>
+  </view>
+  <view class='body'>
+    <view class='main'>
+
+      <view class="swiper-tab" style="top:{{top}}px">
+        <block wx:for="{{tabs}}" wx:for-index="index" wx:for-item="item" wx:key="">
+          <view class="tab-item" id="{{index}}" bindtap='tab'>
+            <view class="{{activeIndex == index ?'active':''}} mains">{{item}}</view>
+          </view>
+        </block>
+      </view>
+
+      <view class='tab-items'>
+        <view class='kong'></view>
+        <view class='ul' wx:if="{{data!=''}}">
+          <block wx:for="{{data}}" wx:key="">
+            <view class='list' data-ordersn="{{item.ordersn}}" bindtap='lookDetails'>
+              <view class='order'>
+                <view class='mainWidth'>
+                  <view class='orderNum'>订单号 : {{item.ordersn}}</view>
+                  <view class='status' wx:if="{{item.status==1}}">待发货</view>
+                  <view class='status' wx:elif="{{item.status==2}}">待收货</view>
+                  <view class='status' wx:elif="{{item.status==3}}">已完成</view>
+                </view>
+              </view>
+              <view class='product'>
+                <image src='{{item.goods_img}}'></image>
+                <view class='info'>
+                  <text class='name' decode="true">{{item.goods_name}}</text>
+                  <view class='time'>发货时间：{{item.addtime}}</view>
+                </view>
+              </view>
+            </view>
+            <view class='btn' wx:if="{{item.status==2}}">
+              <view class='mainWidths'>
+                <view class='confirm' data-ordersn="{{item.ordersn}}" bindtap="confirm">确认收货</view>
+              </view>
+            </view>
+          </block>
+        </view>
+        <view class="ul uls" wx:else>
+          <image src="../../images/h11.png"></image>
+          <view class="desc">暂无订单信息</view>
+        </view>
+      </view>
+
+
+    </view>
+  </view>
+</view>

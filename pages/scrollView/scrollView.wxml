@@ -31,14 +31,37 @@
         </view>
       </scroll-view>
       
-      <swiper current="{{activeIndex}}" style="height:{{filter.getHeight(tabBoxHeight, data.list1.length)}}rpx" bindchange="bindChange"  class="swiper-box">
-        <block wx:for="{{data}}" wx:for-item="item" wx:key="">
-          <swiper-item class="swiper-item">
-              <view wx:for="{{item}}" wx:for-item="list" class="test" wx:key=''>
-                {{list}}
-              </view>
-          </swiper-item >
-        </block>
+      <swiper current="{{activeIndex}}" style="height:{{filter.getHeight(tabBoxHeight, data.length)}}rpx" bindchange="bindChange"  class="swiper-box">
+        <swiper-item class="swiper-item">
+            <view wx:for="{{data}}" wx:for-item="item" class="test" wx:key=''>
+              {{item}}
+            </view>
+        </swiper-item>
+        <swiper-item class="swiper-item">
+            <view wx:for="{{data}}" wx:for-item="item" class="test" wx:key=''>
+              {{item}}
+            </view>
+        </swiper-item>
+        <swiper-item class="swiper-item">
+            <view wx:for="{{data}}" wx:for-item="item" class="test" wx:key=''>
+              {{item}}
+            </view>
+        </swiper-item>
+        <swiper-item class="swiper-item">
+            <view wx:for="{{data}}" wx:for-item="item" class="test" wx:key=''>
+              {{item}}
+            </view>
+        </swiper-item>
+        <swiper-item class="swiper-item">
+            <view wx:for="{{data}}" wx:for-item="item" class="test" wx:key=''>
+              {{item}}
+            </view>
+        </swiper-item>
+        <swiper-item class="swiper-item">
+            <view wx:for="{{data}}" wx:for-item="item" class="test" wx:key=''>
+              {{item}}
+            </view>
+        </swiper-item>
       </swiper>
 
     </view>

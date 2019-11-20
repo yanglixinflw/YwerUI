@@ -170,6 +170,24 @@ Page({
         pathUrl: "/pages/drag/drag",
         like: true
       },
+      {
+        id: 10,
+        name: "动态切换头部导航2",
+        pathUrl: "/pages/changeNav/changeNav",
+        like: true
+      },
+      {
+        id: 11,
+        name: "微信扫码",
+        pathUrl: "/pages/scan/scan",
+        like: true
+      },
+      {
+        id: 12,
+        name: "js验证码",
+        pathUrl: "/pages/js-vcode/js-vcode",
+        like: true
+      },
     ],
     pathUrlList03:[]
   },
